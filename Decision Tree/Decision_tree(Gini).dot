@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="petal_width <= 0.75\ngini = 0.667\nsamples = 105\nvalue = [35, 35, 35]\nclass = Iris Setosa", fillcolor="#ffffff"] ;
+1 [label="gini = 0.0\nsamples = 35\nvalue = [35, 0, 0]\nclass = Iris Setosa", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="petal_width <= 1.65\ngini = 0.5\nsamples = 70\nvalue = [0, 35, 35]\nclass = Iris Versicolor", fillcolor="#ffffff"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="petal_length <= 4.95\ngini = 0.057\nsamples = 34\nvalue = [0, 33, 1]\nclass = Iris Versicolor", fillcolor="#3fe685"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 33\nvalue = [0, 33, 0]\nclass = Iris Versicolor", fillcolor="#39e581"] ;
+3 -> 4 ;
+5 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1]\nclass = Iris Virginica", fillcolor="#8139e5"] ;
+3 -> 5 ;
+6 [label="petal_width <= 1.75\ngini = 0.105\nsamples = 36\nvalue = [0, 2, 34]\nclass = Iris Virginica", fillcolor="#8845e7"] ;
+2 -> 6 ;
+7 [label="sepal_width <= 2.75\ngini = 0.5\nsamples = 2\nvalue = [0, 1, 1]\nclass = Iris Versicolor", fillcolor="#ffffff"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1]\nclass = Iris Virginica", fillcolor="#8139e5"] ;
+7 -> 8 ;
+9 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = Iris Versicolor", fillcolor="#39e581"] ;
+7 -> 9 ;
+10 [label="petal_length <= 4.85\ngini = 0.057\nsamples = 34\nvalue = [0, 1, 33]\nclass = Iris Virginica", fillcolor="#853fe6"] ;
+6 -> 10 ;
+11 [label="sepal_width <= 3.1\ngini = 0.444\nsamples = 3\nvalue = [0, 1, 2]\nclass = Iris Virginica", fillcolor="#c09cf2"] ;
+10 -> 11 ;
+12 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 2]\nclass = Iris Virginica", fillcolor="#8139e5"] ;
+11 -> 12 ;
+13 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = Iris Versicolor", fillcolor="#39e581"] ;
+11 -> 13 ;
+14 [label="gini = 0.0\nsamples = 31\nvalue = [0, 0, 31]\nclass = Iris Virginica", fillcolor="#8139e5"] ;
+10 -> 14 ;
+}
